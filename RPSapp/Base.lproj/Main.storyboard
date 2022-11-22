@@ -24,41 +24,64 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-8O-ZoZ">
-                                <rect key="frame" x="0.0" y="401" width="390" height="443"/>
+                                <rect key="frame" x="0.0" y="401" width="390" height="433"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAJ-q3-Aqx">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="443"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-jC-2Ix">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="259.66666666666669"/>
+                                        <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAJ-q3-Aqx">
+                                        <rect key="frame" x="0.0" y="259.66666666666663" width="390" height="130"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rock" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGs-vO-M4P">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="443"/>
-                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paper" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-bj-hT4">
-                                                <rect key="frame" x="130" y="0.0" width="130" height="443"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAN-RY-Gfk">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Rock"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TU-9i-ya5">
+                                                <rect key="frame" x="130" y="0.0" width="130" height="130"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Paper"/>
+                                                </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
                                                         <real key="value" value="1.5700000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scissors" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qv3-kh-cnV">
-                                                <rect key="frame" x="260" y="0.0" width="130" height="443"/>
-                                            </imageView>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-RV-zFb">
+                                                <rect key="frame" x="260" y="0.0" width="130" height="130"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Scissors"/>
+                                                </buttonConfiguration>
+                                            </button>
                                         </subviews>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You Win" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ku9-nO-Khq">
-                                        <rect key="frame" x="0.0" y="443" width="390" height="0.0"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You Win" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ku9-nO-Khq">
+                                        <rect key="frame" x="0.0" y="389.66666666666663" width="390" height="43.333333333333314"/>
                                         <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZAJ-q3-Aqx" firstAttribute="height" secondItem="Ime-8O-ZoZ" secondAttribute="height" multiplier="0.3" id="wfB-ch-cBQ"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pMB-p9-C7r">
                                 <rect key="frame" x="0.0" y="47" width="390" height="409"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You Win" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oef-T5-w01">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="395"/>
                                         <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -69,33 +92,47 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-jl-lqv">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="409"/>
+                                        <rect key="frame" x="0.0" y="395" width="390" height="14"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scissors" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2nR-oq-TKu">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="409"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAX-7D-tFH">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Scissors"/>
+                                                </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
                                                         <real key="value" value="3.1400000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paper" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1MZ-UA-Ltj">
-                                                <rect key="frame" x="130" y="0.0" width="130" height="409"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmd-Lu-VIc">
+                                                <rect key="frame" x="130" y="0.0" width="130" height="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Paper"/>
+                                                </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
                                                         <real key="value" value="4.7199999999999998"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rock" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Osn-6N-OYP">
-                                                <rect key="frame" x="260" y="0.0" width="130" height="409"/>
-                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Ua-WKX">
+                                                <rect key="frame" x="260" y="0.0" width="130" height="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Rock"/>
+                                                </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
                                                         <real key="value" value="3.1400000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                            </imageView>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -104,28 +141,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.69980797709999998" green="1" blue="0.99746534799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ime-8O-ZoZ" secondAttribute="trailing" id="4cB-C7-xLA"/>
-                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8Ao-OV-KPY"/>
-                            <constraint firstAttribute="trailing" secondItem="pMB-p9-C7r" secondAttribute="trailing" id="U2Z-ri-L9q"/>
-                            <constraint firstItem="pMB-p9-C7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W7F-sU-qWc"/>
-                            <constraint firstAttribute="bottom" secondItem="7Gc-bh-KAU" secondAttribute="bottom" id="aai-fp-Vds"/>
-                            <constraint firstItem="Ime-8O-ZoZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="354" id="as6-PM-mZR"/>
-                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dCP-aB-e6Q"/>
-                            <constraint firstItem="Ime-8O-ZoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dvx-Hh-MYr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pMB-p9-C7r" secondAttribute="bottom" constant="354" id="tnA-DL-pSV"/>
-                            <constraint firstItem="pMB-p9-C7r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="w4t-Z1-O5t"/>
-                            <constraint firstAttribute="bottom" secondItem="Ime-8O-ZoZ" secondAttribute="bottom" id="xo5-dg-nQh"/>
-                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="zNH-3g-2Tc"/>
+                            <constraint firstItem="pMB-p9-C7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A3E-qE-w03"/>
+                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="CFv-HJ-CaE"/>
+                            <constraint firstAttribute="trailing" secondItem="Ime-8O-ZoZ" secondAttribute="trailing" id="FtX-o7-cLE"/>
+                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L3G-Et-6YW"/>
+                            <constraint firstItem="Ime-8O-ZoZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="354" id="Rgw-k7-j87"/>
+                            <constraint firstAttribute="bottom" secondItem="Ime-8O-ZoZ" secondAttribute="bottom" constant="10" id="Ud0-XN-kcW"/>
+                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bn6-vl-afg"/>
+                            <constraint firstAttribute="bottom" secondItem="7Gc-bh-KAU" secondAttribute="bottom" id="ezE-R4-g0j"/>
+                            <constraint firstItem="Ime-8O-ZoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q3i-6x-QJW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pMB-p9-C7r" secondAttribute="bottom" constant="354" id="sYo-ah-7gR"/>
+                            <constraint firstItem="pMB-p9-C7r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ysj-SW-b4h"/>
+                            <constraint firstAttribute="trailing" secondItem="pMB-p9-C7r" secondAttribute="trailing" id="ze5-hg-E83"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bluePaper" destination="1MZ-UA-Ltj" id="UE5-Ey-7Bm"/>
-                        <outlet property="blueRock" destination="Osn-6N-OYP" id="9v3-Qj-pre"/>
-                        <outlet property="blueScissors" destination="2nR-oq-TKu" id="eDl-lS-gwm"/>
-                        <outlet property="redPaper" destination="Ydt-bj-hT4" id="IU9-Mh-CCg"/>
-                        <outlet property="redRock" destination="XGs-vO-M4P" id="ZIh-7X-eWs"/>
-                        <outlet property="redScissors" destination="Qv3-kh-cnV" id="vFZ-OY-kbJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

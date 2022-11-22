@@ -21,18 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
                 super.viewDidLoad()
-                let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
-        blueScissors.addGestureRecognizer(tapGR)
-        blueScissors.isUserInteractionEnabled = true
-        bluePaper.addGestureRecognizer(tapGR)
-        bluePaper.isUserInteractionEnabled = true
-        blueScissors.addGestureRecognizer(tapGR)
-        blueScissors.isUserInteractionEnabled = true
-        }
-        @objc func imageTapped(sender: UITapGestureRecognizer) {
-                if sender.state == .ended {
-                        print("BlueScissors tapped")
-                }
+                
         }
 }
 
