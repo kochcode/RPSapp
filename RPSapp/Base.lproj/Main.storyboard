@@ -46,6 +46,12 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You Win" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ku9-nO-Khq">
+                                        <rect key="frame" x="0.0" y="443" width="390" height="0.0"/>
+                                        <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pMB-p9-C7r">
@@ -112,6 +118,14 @@
                             <constraint firstItem="7Gc-bh-KAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="zNH-3g-2Tc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bluePaper" destination="1MZ-UA-Ltj" id="UE5-Ey-7Bm"/>
+                        <outlet property="blueRock" destination="Osn-6N-OYP" id="9v3-Qj-pre"/>
+                        <outlet property="blueScissors" destination="2nR-oq-TKu" id="eDl-lS-gwm"/>
+                        <outlet property="redPaper" destination="Ydt-bj-hT4" id="IU9-Mh-CCg"/>
+                        <outlet property="redRock" destination="XGs-vO-M4P" id="ZIh-7X-eWs"/>
+                        <outlet property="redScissors" destination="Qv3-kh-cnV" id="vFZ-OY-kbJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
