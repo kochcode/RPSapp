@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GFN-nc-0TO">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -17,72 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-bh-KAU">
-                                <rect key="frame" x="0.0" y="407" width="390" height="437"/>
+                                <rect key="frame" x="0.0" y="423" width="390" height="421"/>
                                 <color key="backgroundColor" red="1" green="0.61127564072718255" blue="0.60419742304150459" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="500"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-8O-ZoZ">
-                                <rect key="frame" x="0.0" y="401" width="390" height="433"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pMB-p9-C7r">
+                                <rect key="frame" x="0.0" y="91" width="390" height="703"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-jC-2Ix">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="259.66666666666669"/>
-                                        <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAJ-q3-Aqx">
-                                        <rect key="frame" x="0.0" y="259.66666666666663" width="390" height="130"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAN-RY-Gfk">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Button" image="Rock"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Rock"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TU-9i-ya5">
-                                                <rect key="frame" x="130" y="0.0" width="130" height="130"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Button" image="Rock"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Paper"/>
-                                                </buttonConfiguration>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
-                                                        <real key="value" value="1.5700000000000001"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-RV-zFb">
-                                                <rect key="frame" x="260" y="0.0" width="130" height="130"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Button" image="Rock"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="Scissors"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You Win" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ku9-nO-Khq">
-                                        <rect key="frame" x="0.0" y="389.66666666666663" width="390" height="43.333333333333314"/>
-                                        <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ZAJ-q3-Aqx" firstAttribute="height" secondItem="Ime-8O-ZoZ" secondAttribute="height" multiplier="0.3" id="wfB-ch-cBQ"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pMB-p9-C7r">
-                                <rect key="frame" x="0.0" y="47" width="390" height="409"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You Win" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oef-T5-w01">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="395"/>
-                                        <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Blue's Turn" borderStyle="roundedRect" placeholder="You Win" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oef-T5-w01">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="100.66666666666667"/>
+                                        <color key="backgroundColor" red="0.69980797709999998" green="1" blue="0.99746534799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -92,10 +38,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-jl-lqv">
-                                        <rect key="frame" x="0.0" y="395" width="390" height="14"/>
+                                        <rect key="frame" x="0.0" y="120.66666666666666" width="390" height="100.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAX-7D-tFH">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="100.33333333333333"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button" image="Rock"/>
                                                 <buttonConfiguration key="configuration" style="plain">
@@ -106,9 +52,12 @@
                                                         <real key="value" value="3.1400000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="blueScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vmi-AR-xfP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmd-Lu-VIc">
-                                                <rect key="frame" x="130" y="0.0" width="130" height="14"/>
+                                                <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="100.33333333333333"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button" image="Rock"/>
                                                 <buttonConfiguration key="configuration" style="plain">
@@ -119,9 +68,12 @@
                                                         <real key="value" value="4.7199999999999998"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="bluePaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fho-yM-oQ6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Ua-WKX">
-                                                <rect key="frame" x="260" y="0.0" width="130" height="14"/>
+                                                <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="100.33333333333333"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button" image="Rock"/>
                                                 <buttonConfiguration key="configuration" style="plain">
@@ -132,31 +84,142 @@
                                                         <real key="value" value="3.1400000000000001"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="blueRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6q3-jY-orL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vs-fa-KJh">
+                                                <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="100.33333333333333"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Store"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                                        <real key="value" value="3.1400000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="storeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aj2-ju-wmD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Score: 0" borderStyle="roundedRect" placeholder="You Win" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LLO-TO-GOb">
+                                        <rect key="frame" x="0.0" y="240.99999999999997" width="390" height="100.66666666666666"/>
+                                        <color key="backgroundColor" red="0.69980797709999998" green="1" blue="0.99746534799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                                <real key="value" value="3.1400000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Score: 0" borderStyle="roundedRect" placeholder="You Win" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R55-uq-YOx">
+                                        <rect key="frame" x="0.0" y="361.66666666666669" width="390" height="100.33333333333331"/>
+                                        <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAJ-q3-Aqx">
+                                        <rect key="frame" x="0.0" y="482.00000000000006" width="390" height="100.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAN-RY-Gfk">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="100.66666666666667"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Rock"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="redRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qBs-BY-BAl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TU-9i-ya5">
+                                                <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="100.66666666666667"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Paper"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                                        <real key="value" value="1.5700000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="redPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ZA-Gb-fgX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-RV-zFb">
+                                                <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="100.66666666666667"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Rock"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="Scissors"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="redScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7CB-fd-GBz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAQ-ro-vnN">
+                                                <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="100.66666666666667"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Play again"/>
+                                                <connections>
+                                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9k-Zk-1cn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" " borderStyle="roundedRect" placeholder="You Win" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ku9-nO-Khq">
+                                        <rect key="frame" x="0.0" y="602.66666666666663" width="390" height="100.33333333333337"/>
+                                        <color key="backgroundColor" red="1" green="0.61127564069999996" blue="0.60419742300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.69980797709999998" green="1" blue="0.99746534799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pMB-p9-C7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A3E-qE-w03"/>
-                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="360" id="CFv-HJ-CaE"/>
-                            <constraint firstAttribute="trailing" secondItem="Ime-8O-ZoZ" secondAttribute="trailing" id="FtX-o7-cLE"/>
-                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L3G-Et-6YW"/>
-                            <constraint firstItem="Ime-8O-ZoZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="354" id="Rgw-k7-j87"/>
-                            <constraint firstAttribute="bottom" secondItem="Ime-8O-ZoZ" secondAttribute="bottom" constant="10" id="Ud0-XN-kcW"/>
-                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bn6-vl-afg"/>
-                            <constraint firstAttribute="bottom" secondItem="7Gc-bh-KAU" secondAttribute="bottom" id="ezE-R4-g0j"/>
-                            <constraint firstItem="Ime-8O-ZoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="q3i-6x-QJW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pMB-p9-C7r" secondAttribute="bottom" constant="354" id="sYo-ah-7gR"/>
-                            <constraint firstItem="pMB-p9-C7r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ysj-SW-b4h"/>
-                            <constraint firstAttribute="trailing" secondItem="pMB-p9-C7r" secondAttribute="trailing" id="ze5-hg-E83"/>
+                            <constraint firstItem="pMB-p9-C7r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1oC-ag-dzJ"/>
+                            <constraint firstAttribute="bottom" secondItem="pMB-p9-C7r" secondAttribute="bottom" constant="50" id="MGH-Rp-ynu"/>
+                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PIG-SM-E1T"/>
+                            <constraint firstItem="pMB-p9-C7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="soD-4c-D0E"/>
+                            <constraint firstAttribute="bottom" secondItem="7Gc-bh-KAU" secondAttribute="bottom" id="sxU-6c-Exl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pMB-p9-C7r" secondAttribute="trailing" id="vao-Mg-QPU"/>
+                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="332" id="w6Z-KM-AJ5"/>
+                            <constraint firstItem="7Gc-bh-KAU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y43-Kx-iHR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IUH-jJ-7o9"/>
+                    <connections>
+                        <outlet property="blueScore" destination="LLO-TO-GOb" id="LeA-CB-oNq"/>
+                        <outlet property="blueStatus" destination="oef-T5-w01" id="mML-MU-WSA"/>
+                        <outlet property="redScore" destination="R55-uq-YOx" id="4Cf-EX-D8L"/>
+                        <outlet property="redStatus" destination="ku9-nO-Khq" id="Aru-xY-FNM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.92307692307691" y="-2.1327014218009479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NP7-9d-3lf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GFN-nc-0TO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L8W-zJ-gHg">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mhm-1K-Eax"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2o-Qo-ZAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
