@@ -111,6 +111,16 @@ class ViewController: UIViewController {
     }
     @IBAction func storeButton(_ sender: UIButton) {
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "storeSegue"{
+             let clickStore = segue.destination as! ViewControllerStore
+            clickStore.clicksS = clicks
+        }
+    }
+    @IBAction func unwind(_ seg: UIStoryboardSegue){
+        let svc = seg.source as! ViewControllerStore
+        clickOutput.text = "Clicks: \(clicks)"
+    }
 }
 
 

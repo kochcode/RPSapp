@@ -17,6 +17,7 @@
 		DA52C615292BBFAB00B69A79 /* RPSappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52C614292BBFAB00B69A79 /* RPSappTests.swift */; };
 		DA52C61F292BBFAB00B69A79 /* RPSappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52C61E292BBFAB00B69A79 /* RPSappUITests.swift */; };
 		DA52C621292BBFAB00B69A79 /* RPSappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52C620292BBFAB00B69A79 /* RPSappUITestsLaunchTests.swift */; };
+		DAEA14412938EC6400D48971 /* ViewControllerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEA14402938EC6400D48971 /* ViewControllerStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DA52C61A292BBFAB00B69A79 /* RPSappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA52C61E292BBFAB00B69A79 /* RPSappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSappUITests.swift; sourceTree = "<group>"; };
 		DA52C620292BBFAB00B69A79 /* RPSappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAEA14402938EC6400D48971 /* ViewControllerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				DA52C5FC292BBFAA00B69A79 /* SceneDelegate.swift */,
 				DA52C5FE292BBFAA00B69A79 /* ViewController.swift */,
 				DA52C600292BBFAA00B69A79 /* Main.storyboard */,
+				DAEA14402938EC6400D48971 /* ViewControllerStore.swift */,
 				DA52C606292BBFAB00B69A79 /* Assets.xcassets */,
 				DA52C608292BBFAB00B69A79 /* LaunchScreen.storyboard */,
 				DA52C60B292BBFAB00B69A79 /* Info.plist */,
@@ -263,6 +266,7 @@
 			files = (
 				DA52C5FF292BBFAA00B69A79 /* ViewController.swift in Sources */,
 				DA52C605292BBFAA00B69A79 /* RPSapp.xcdatamodeld in Sources */,
+				DAEA14412938EC6400D48971 /* ViewControllerStore.swift in Sources */,
 				DA52C5FB292BBFAA00B69A79 /* AppDelegate.swift in Sources */,
 				DA52C5FD292BBFAA00B69A79 /* SceneDelegate.swift in Sources */,
 			);
