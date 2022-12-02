@@ -113,14 +113,15 @@ class ViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "storeSegue"{
-             let clickStore = segue.destination as! ViewControllerStore
-            clickStore.clicksS = clicks
+             let scoreStore = segue.destination as! ViewControllerStore
+            scoreStore.r2Score = rScore
+            scoreStore.b2Score = bScore
         }
     }
-    @IBAction func unwind(_ seg: UIStoryboardSegue){
-        let svc = seg.source as! ViewControllerStore
-        clickOutput.text = "Clicks: \(clicks)"
-    }
+//    @IBAction func unwind(_ seg: UIStoryboardSegue){
+//        let svc = seg.source as! ViewControllerStore
+//        clickOutput.text = "Clicks: \(clicks)"
+//    }
 }
 
 

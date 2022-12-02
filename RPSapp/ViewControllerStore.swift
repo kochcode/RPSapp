@@ -8,31 +8,52 @@
 import UIKit
 
 class ViewControllerStore: UIViewController {
-    var clicksS : Int = 0
-    var multi : Int = 1
+    
+    
+    @IBOutlet weak var blue2Score: UITextField!
+    @IBOutlet weak var red2Score: UITextField!
+    var b2Score : Int = 0
+    var r2Score : Int = 0
+    var bColor = 0
+    var rColor = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        blue2Score.text! = "Score: \(b2Score)"
+        red2Score.text! = "Score: \(r2Score)"
     }
-    storeClickOutput.text = "Clicks: \(clicksS)"
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "unwindSegue"{
-             let clickMain = segue.destination as! ViewController
-            clickMain.clicks = clicksS
-            clickMain.multiP = multi
+    @IBAction func purpleButton(_ sender: UIButton) {
+        if b2Score >= 10{
+            bColor = 2
+            b2Score -= 10
         }
     }
+    @IBAction func greenButton(_ sender: UIButton) {
+        if b2Score >= 5{
+            bColor = 1
+            b2Score -= 5
+        }
+    }
+    @IBAction func orangeButton(_ sender: UIButton) {
+        if r2Score >= 5{
+            rColor = 1
+            r2Score -= 5
+        }
+    }
+    @IBAction func yellowButton(_ sender: UIButton) {
+        if r2Score >= 10{
+            rColor = 2
+            r2Score -= 10
+        }
+    }
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "unwindSegue"{
+//             let scoreMain = segue.destination as! ViewController
+//            scoreMain.bScore = b2Score
+//            scoreMain.rScore = r2Score
+//        }
+//    }
 
 }
