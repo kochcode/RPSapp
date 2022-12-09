@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rUx-CL-Anc">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -204,6 +204,7 @@
                     <connections>
                         <outlet property="blueScore" destination="LLO-TO-GOb" id="LeA-CB-oNq"/>
                         <outlet property="blueStatus" destination="oef-T5-w01" id="mML-MU-WSA"/>
+                        <outlet property="redArea" destination="7Gc-bh-KAU" id="oVc-OD-5yQ"/>
                         <outlet property="redScore" destination="R55-uq-YOx" id="4Cf-EX-D8L"/>
                         <outlet property="redStatus" destination="ku9-nO-Khq" id="Aru-xY-FNM"/>
                     </connections>
@@ -341,9 +342,11 @@
                     <connections>
                         <outlet property="blue2Score" destination="bft-um-4qj" id="gUi-PO-mli"/>
                         <outlet property="red2Score" destination="SSp-9d-anh" id="2Bk-NR-bCX"/>
+                        <segue destination="Ytj-al-BwM" kind="unwind" identifier="unwindSegue2" unwindAction="unwind:" id="rZ9-Yu-d0J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5T9-TA-xMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ytj-al-BwM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2680" y="-2.1327014218009479"/>
         </scene>
